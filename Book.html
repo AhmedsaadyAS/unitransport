@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Book.css">
+    <link rel="stylesheet" href="./heder.css">
+    <title>BookSmart</title>
+</head>
+<body>
+    <!-- navebar  -->
+    <header>
+        <div class="logo">
+            <img src="./Screenshot 2024-11-09 141242.png" width="50px" height="70px">
+            <span class="span"> <a >Uni Transport</a> </span>
+        </div>
+        <ul>
+            <li> <a href="./h.html" class="a"> Home </a> </li>
+            <li id="service">
+                <a  class="a"> more</a>
+                <label style="height: 10px;"> </label>
+                <ul class="service-list">
+                    <li> <a class="sev" href="./profile.html">Profile</a></li> <br>
+                    <li> <a class="sev" href="./Book.html">BOOK</a></li> <br>
+                    <li> <a class="sev" href="./Creat_Now.html">Creat_Now</a></li> <br>
+                </ul>
+    
+            </li>
+        </ul>
+
+    </header>
+    <!-- End navebar -->
+
+    <div class="container">
+            <h1>BookSmart</h1>
+           
+        <h2>Select a date</h2>
+        <input type="date" id="datePicker" name="datePicker" >
+
+        <table>
+            <thead>
+                <tr>
+                    <th>car num</th>
+                    <th>Departure</th>
+                    <th>Seats</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tr>
+                    <td>FL123</td>
+                    <td>new york</td>
+                    <td>15</td>
+                    <td>6h 30m</td>
+                    <td>.00</td>
+                    <td style="padding-left:  60px;"><button class = "add" onclick="change(this)"> add </button></td>
+
+                </tr>
+                <tr>
+                    <td>FL456</td>
+                    <td>chicago</td>
+                    <td>15</td>
+                    <td>3h 45m</td>
+                    <td>.00</td>
+                    <td style="padding-left:  60px;"><button class = "add" onclick="change(this)"> add </button></td>
+
+                </tr>
+                <tr>
+                    <td>FL123</td>
+                    <td>new york</td>
+                    <td>15</td>
+                    <td>6h 30m</td>
+                    <td>.00</td>
+                    <td style="padding: 0px 0px 0px 60px"><button class = "add" onclick="change(this)"> add </button></td>
+
+                </tr>
+                <tr>
+                    <td>FL123</td>
+                    <td>new york</td>
+                    <td>15</td>
+                    <td>6h 30m</td>
+                    <td>.00</td>
+                    <td style="padding-left:  60px;"><button class = "add" onclick="change(this)"> add </button></td>
+
+                </tr>
+                <tr>
+                    <td>FL123</td>
+                    <td>new york</td>
+                    <td>15</td>
+                    <td>6h 30m</td>
+                    <td>.00</td>
+                    <td style="padding-left:  60px;"><button class = "add" onclick="change(this)"> add </button></td>
+
+                </tr>
+            <tbody id="bookingTable">
+                <!-- Rows will be populated here by JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <button class = "Book" onclick="document.location = './profile.html'  ">Book</button>
+            <button class = "Create"onclick="createNew()">Create New</button>
+        </div>
+    </div>
+
+    <script src="./Book.js"></script>
+</body>
+</html>

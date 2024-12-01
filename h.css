@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* الازرار*/
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: black;
+    background-image: linear-gradient(45deg, #24a17b, #0a5c46);
+    font-size: 14px;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(45deg, rgb(152, 39, 39), rgb(24, 60, 118));
+    transition: 1.5s;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* الحاويه*/
+
+.hero {
+    margin-top: 70px;
+    max-width: 100%;
+    display: flex;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10px;
+    padding-left: 50px;
+    overflow: hidden;
+    background-color:  #f5f7fa;
+}
+/* الكلام */
+
+.content {
+    flex: 2;
+    margin-top: 10%;
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: rgb(13, 1, 1);
+    flex: 1;
+    max-width: 75%;
+}
+
+.content p {
+    margin: 10px 0 30px;
+    color: rgb(7, 0, 0);
+    animation-delay: 0.5s;
+    flex: 1;
+    max-width: 75%;
+}
+
+.content .btn {
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.btn:hover {
+    border-top-right-radius: 30px;
+}
+/* الصوره*/
+
+.feature-img {
+    text-align: left;
+    flex: 1;
+    min-width: 40%;
+    max-width: 40%;
+    height: auto;
+    right: 10%;
+    animation-delay: 1.5s;
+    transition: .5s;
+}
+
+
+
+.feature-img:hover {
+    padding: 10px;
+}
+
+.anim {
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.box {
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 80px;
+    display: flex; 
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.form-section {
+    flex: 4; /* تجعل الجزء الخاص بالفورم يأخذ نصف المساحة */
+    margin-right: 20px; /* مسافة بين الفورم والملاحظة */
+}
+.form-section label {
+    display: block;
+    margin: 10px 0 10px 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-section input,
+.form-section select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#submit-btn {
+    background-image: linear-gradient(45deg, #24a17b, #0a5c46);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+    width: 10%; /* جعل الزر يأخذ كامل عرض البوكس */
+    padding: 10px 20px;
+    margin:  20px 500px;
+}
+#submit-btn:hover{
+    background-image: linear-gradient(45deg, #0b503b, #5c1f0a);
+}
+ .note {
+    flex: 1; /* يجعل الجزء الخاص بالملاحظة يأخذ النصف الآخر */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: 200px;
+    background-color: #dff9fb;
+}       
+.note h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+        
+.note-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
