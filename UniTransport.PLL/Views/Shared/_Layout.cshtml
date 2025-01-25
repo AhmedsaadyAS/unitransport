@@ -1,0 +1,64 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using UniTransport.DAL.Entities
+@inject SignInManager<User> SignInManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/heder.css">
+    <link rel="icon" href="~/assets/logo.png">
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="~/assets/logo.png" alt="Uni Transport Logo">
+            <span>UniTransport</span>
+        </div>
+
+        <nav>
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Trip" asp-action="Book">Book</a>
+            <a asp-controller="RequestedTrip" asp-action="RequestNow">Request Now</a>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                @if (User.IsInRole("Student"))
+                {
+                    <a asp-controller="Student" asp-action="Profile">Profile</a>
+                }
+                else if (User.IsInRole("Admin"))
+                {
+                    <a asp-controller="Admin" asp-action="Index">Dashboard</a>
+                }
+            }
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a style="line-height: initial;" asp-controller="Account" asp-action="Logout" class="logout-link">Log out</a>
+            }
+            else
+            {
+                @* @if (!Context.Request.Path.Value.Contains("/Account/Login", StringComparison.OrdinalIgnoreCase))
+                {
+                    
+                } *@
+                <div>
+                    <a style="line-height: initial;" asp-controller="Account" asp-action="Login" class="login-link">Log in</a>
+                    <a style="line-height: initial;" asp-controller="Account" asp-action="Registration" class="login-link">Sign Up</a>
+                </div>   
+            }
+        </nav>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    @RenderBody()
+    @* <script src="~/js/auth.js"></script> *@
+    <script src="~/js/header.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
