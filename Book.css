@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header .h1 {
+    display: inline;
+}
+
+nav .a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#datePicker{
+    border-radius: 5px;
+    width: 150px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1c9974;
+    color: #fff;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    padding: 8px;
+    border: none;
+}
+
+button {
+    background-image: linear-gradient(45deg, #24a17b, #0a5c46);
+    color: #fff;
+    border: none;
+    
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+    width: 100px;
+}
+
+.add {
+    background-image: linear-gradient(45deg, #24a17b, #0a5c46);
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+    width: 100px;
+}
+
+.cencel {
+    background-image: linear-gradient(45deg, rgb(244, 43, 43), #5e0404);
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+    width: 100px;
+}
+button:hover 
+{
+    background-image: linear-gradient(45deg, #502c0b, #5c1f0a);
+}
+cencel:hover {
+    background-image: linear-gradient(45deg, hsl(60, 86%, 47%), hsl(0, 92%, 33%));
+}
+
+.buttons {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    
+
+}

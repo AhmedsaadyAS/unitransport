@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Creat_Now.css">
+    <link rel="stylesheet" href="heder.css">
+    <title>Creat_Now</title>
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <img src="Screenshot 2024-11-09 141242.png" width="50px" height="70px">
+                <span class="span"> <a >Uni Transport</a> </span>
+            </div>
+            <ul>
+                <li> <a href="h.html" class="a"> Home </a> </li>
+                <li id="service">
+                    <a  class="a"> more</a>
+                    <label style="height: 10px;"> </label>
+                    <ul class="service-list">
+                        <li> <a class="sev" href="./profile.html">Profile</a></li> <br>
+                        <li> <a class="sev" href="./Book.html">Book</a></li> <br>
+                        <li> <a class="sev" href="./Creat_Now.html">Creat_Now</a></li> <br>
+                    </ul>
+        
+                </li>
+            </ul>
+            
+    </header>
+    <div class="box">
+        <div class="form-section">
+            <h2>Book Transportation</h2>
+            <label for="from">From:</label>
+            <select name="from" id="from">
+                <option value="مبني م"> مبني م </option>
+                <option value="مبني ل"> مبني ل  </option>
+                <option value="مبني ن">  مبني ن </option>
+            </select>
+            
+            
+            <label for="to">To</label>
+            <select name="to" id="to">
+                <option value="الحاسبات والمعلومات">الحاسبات والمعلومات </option>
+                <option value="طب بشري">طب بشري  </option>
+                <option value="طب الفم والاسنان ">طب الفم والاسنان </option>
+                <option value="بيطري">بيطري </option>
+                <option value="علاج طبيعي">علاج طبيعي  </option>
+                <option value="صيدلة"> صيدلة  </option>
+                <option value="علوم">علوم</option>
+                <option value="حقوق">حقوق</option>
+                <option value="تجارة">تجارة </option>
+                <option value="اعلام">اعلام </option>
+                <option value="اداب">اداب </option>
+                <option value="تربية">تربية </option>
+                <option value="تربية رياضية">تربية رياضية</option>
+                <option value="تربية نوعية">تربية نوعية</option>
+                <option value="تمريض">تمريض </option>
+            </select>
+            
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+            
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time">
+            <button type= "button" id="submit-btn" >Book Now</button>
+        </div>
+        <div class="note">
+            <h3>Add notes </h3>
+            <div class="note-footer">
+                <span>أحمد سعدي</span>
+            </div>
+        </div>
+<script src = "./Creat_Now.js"></script>
+</body>
+</html>
